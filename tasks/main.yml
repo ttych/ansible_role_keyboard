@@ -1,0 +1,12 @@
+---
+
+- block:
+    - include_tasks: context.yml
+
+    - include_tasks: context_service.yml
+
+    - include_tasks: requirements.yml
+
+    - include_tasks: bootloadHID.yml
+
+  when: want_keyboard

@@ -1,0 +1,6 @@
+---
+
+- name: install qmk requirements
+  package:
+    name: "{{ qmk_requirements }}"
+    state: present
